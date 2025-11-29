@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YBB - New Technology</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e7f3ff; /* Light blue background */
+        }
+        header {
+            background: #003366; /* Dark blue header */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #00509e; /* Medium blue for navigation */
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background: #007bbf; /* Lighter blue on hover */
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #003366; /* Dark blue footer */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        #searchSection {
+            text-align: center;
+            margin: 10px 20px 0; /* Reduced top margin */
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        #userInput {
+            padding: 10px;
+            width: 60%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #searchButton {
+            padding: 10px;
+            border: none;
+            background-color: #00509e;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #searchButton:hover {
+            background-color: #007bbf;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            background: #f0f0f0;
+            border-radius: 5px;
+        }
+        .logo {
+            max-width: 100px; /* Adjust as needed */
+            height: auto;
+            display: block;
+            margin: 10px auto; /* Center the image */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to YBB - Exploring New Technology</h1>
+    <img src="ybb-logo.png" alt="YBB Logo" class="logo"> <!-- Add logo here -->
+</header>
+
+<nav>
+    <a href="#about">About Technology</a>
+    <a href="#trends">Tech Trends</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="searchSection">
+    <h2>Ask Me Anything About Technology</h2>
+    <input type="text" id="userInput" placeholder="Ask your question here!" />
+    <button id="searchButton">Search</button>
+    <div id="result"></div>
+</section>
+
+<section id="about">
+    <h2>About New Technology</h2>
+    <p>New technology is constantly changing the way we live and work. From artificial intelligence and blockchain to virtual reality and the Internet of Things (IoT), these advancements have a profound impact on various sectors including healthcare, finance, and education.</p>
+</section>
+
+<section id="trends">
+    <h2>Current Tech Trends</h2>
+    <ul>
+        <li><strong>Artificial Intelligence:</strong> AI is revolutionizing industries by automating processes and providing data-driven insights.</li>
+        <li><strong>Blockchain Technology:</strong> This decentralized ledger technology enhances security and transparency across transactions.</li>
+        <li><strong>5G Networks:</strong> The rollout of 5G is enabling faster data speeds and more reliable connectivity, paving the way for new applications.</li>
+        <li><strong>Cloud Computing:</strong> Businesses are increasingly leveraging cloud services for scalability and flexibility in operations.</li>
+        <li><strong>Augmented and Virtual Reality:</strong> AR and VR are transforming user experiences in gaming, training, and marketing.</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to discuss new technology trends or have any inquiries, feel free to reach out through the following channels:</p>
+    <ul>
+        <li>Email: myemail@ybb.com</li>
+        <li>Phone: (123) 456-7890</li>
+        <li>LinkedIn: <a href="https://www.linkedin.com" target="_blank">linkedin.com/in/ybb</a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 YBB - New Technology</p>
+</footer>
+
+<script>
+    const technologies = {
+        "health technology": {
+            type: "Tools and applications",
+            details: [
+                "Health technology includes tools, devices, and applications used to improve healthcare delivery.",
+                "Telemedicine is a growing field, allowing patients to consult with healthcare providers remotely.",
+                "Wearable health devices help individuals monitor aspects of their health in real-time.",
+                "Health informatics leverages data to improve patient outcomes and enhance healthcare systems."
+            ]
+        },
+        "artificial intelligence": {
+            type: "Field of computer science",
+            details: [
+                "AI is transforming industries with automation and insights.",
+                "Machine learning algorithms are improving daily.",
+                "AI ethics and bias are important considerations.",
+                "AI is enhancing customer experiences through personalized recommendations."
+            ]
+        },
+        "information and communications technology": {
+            type: "Communication and information management",
+            details: [
+                "ICT encompasses all technologies for the manipulation and communication of information.",
+                "It includes communication hardware, software, and the internet.",
+                "ICT is vital for education, with e-learning platforms providing remote learning opportunities.",
+                "Businesses leverage ICT for better communication and operational efficiency."
+            ]
+        },
+        "information technology": {
+            type: "Management of computer-based information systems",
+            details: [
+                "IT involves the use of computers and software to manage information.",
+                "It is essential for data storage, processing, and secure information transfer.",
+                "Cybersecurity is an integral part of IT, protecting data from breaches.",
+                "IT supports business operations through software solutions and infrastructure."
+            ]
+        },
+        "educational technology": {
+            type: "Digital learning tools and resources",
+            details: [
+                "Educational technology enhances learning through digital tools and resources.",
+                "E-learning platforms provide interactive and personalized learning experiences.",
+                "Gamification in education increases engagement and retention.",
+                "EdTech innovations are transforming traditional teaching methods."
+            ]
+        },
+        "manufacturing technology": {
+            type: "Production techniques and tools",
+            details: [
+                "Manufacturing technology involves techniques and tools used to produce goods.",
+                "Automation and robotics are revolutionizing production efficiency.",
+                "3D printing is emerging as a method for custom and on-demand manufacturing.",
+                "Smart factories leverage IoT and AI for optimized production processes."
+            ]
+        },
+        "internet of things": {
+            type: "Network of connected devices",
+            details: [
+                "IoT connects everyday devices to the internet.",
+                "Smart homes and cities are powered by IoT.",
+                "Data privacy and security are crucial in IoT.",
+                "IoT can enhance operational efficiency in manufacturing and logistics."
+            ]
+        },
+        "biotechnology": {
+            type: "Biological systems applications",
+            details: [
+                "Biotechnology uses biological systems to develop products and technologies.",
+                "It has applications in healthcare, agriculture, and environmental management.",
+                "Gene editing technologies, like CRISPR, are pushing boundaries in medical research.",
+                "Biopharmaceuticals are revolutionizing treatment options for various diseases."
+            ]
+        },
+        "computers": {
+            type: "Digital computing devices",
+            details: [
+                "Computers have become central to modern life, facilitating work, communication, and entertainment.",
+                "With advancements in processing power, computers are now more powerful than ever.",
+                "Cloud computing allows filing, access, and processing to occur remotely.",
+                "Computers are integral to advancements in AI, data analysis, and digital communication."
+            ]
+        }
+    };
+
+    function displayResponse() {
+        const userInput = document.getElementById('userInput').value.toLowerCase();
+        const resultDiv = document.getElementById('result');
+        let response = "I'm sorry, I don't have information on that topic. Please ask about Health Technology, Artificial Intelligence, ICT, IT, Educational Technology, Manufacturing Technology, IoT, Biotechnology, or Computers.";
+
+        for (const keyword in technologies) {
+            if (userInput.includes(keyword)) {
+                const techInfo = technologies[keyword];
+                response = `<strong>Type:</strong> ${techInfo.type}<br><strong>Details:</strong> ${techInfo.details[Math.floor(Math.random() * techInfo.details.length)]}`;
+                break; // Stop after finding the first match
+            }
+        }
+        resultDiv.innerHTML = response;
+    }
+
+    document.getElementById('searchButton').addEventListener('click', displayResponse);
+    document.getElementById('userInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            displayResponse();
+        }
+    });
+</script>
+
+</body>
+</html>
